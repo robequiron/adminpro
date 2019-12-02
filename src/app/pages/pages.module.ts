@@ -14,6 +14,7 @@ import { IncrementarComponent } from '../components/progress/incrementar.compone
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
 import { GraficodonaComponent } from '../components/graficodona/graficodona.component';
+import { AccontSettingsComponent } from './accont-settings/accont-settings.component';
 
 @NgModule({
     declarations:[
@@ -23,7 +24,8 @@ import { GraficodonaComponent } from '../components/graficodona/graficodona.comp
         PagesComponent,
         ProgressComponent,
         IncrementarComponent,
-        GraficodonaComponent
+        GraficodonaComponent,
+        AccontSettingsComponent
     ],
     exports:[
         DashboardComponent,

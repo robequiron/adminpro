@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 
+//Rotas
 import { APP_ROUTES } from './app.routes';
 
 //Modulos
@@ -12,6 +14,10 @@ import {FormsModule} from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { RegistreComponent } from './login/registre.component';
 import { AppComponent } from './app.component';
+
+//Servicios
+import { ServiceModule} from './services/service.module';
+//import { SettingService} from './services/setting/setting.service';
 
 
 
@@ -29,9 +35,14 @@ import { AppComponent } from './app.component';
     BrowserModule,
     PageModule,
     FormsModule,
-    APP_ROUTES
+    APP_ROUTES,
+    ServiceModule,
+    CommonModule
   ],
-  providers: [],
+  providers: [
+   //SettingService
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
